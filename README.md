@@ -16,7 +16,7 @@ I run a short-form video project ([@USPBLE on YouTube](https://www.youtube.com/@
 
 ## 🔗 Links
 
-- [LinkedIn](https://www.linkedin.com/in/julia-kwit-5983073b6/)
+- [LinkedIn](www.linkedin.com/in/juliakwit)
 - [YouTube — @USPBLE](https://www.youtube.com/@USPBLE)
 
 *Work in progress — updated as I complete each stage of my analytics learning plan.*
