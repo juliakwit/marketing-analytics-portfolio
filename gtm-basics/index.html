@@ -25,7 +25,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       color: #222;
     }
 
-    #button1 {
+    #button1, #demo-button {
       background: #C11C84;
       color: white;
       border: none;
@@ -57,6 +57,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </ul>
 
     <button id="button1" type="button">Get started</button>
+    <button id="demo-button" type="button">Request demo</button>
 
     <p>
       Part of my
@@ -65,6 +66,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <a href="https://www.linkedin.com/in/julia-kwit-5983073b6/" target="_blank">LinkedIn</a>
     </p>
   </main>
+    <script>
+    document.getElementById('demo-button').addEventListener('click', function () {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'demo_request',
+        plan: 'premium',
+        button_location: 'homepage'
+      });
+    });
+  </script>
 </body>
 
 </html>
