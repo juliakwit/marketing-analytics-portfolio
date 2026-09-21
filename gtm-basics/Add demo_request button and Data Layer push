@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GTM Test Page | Julia Kwit</title>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K8GGVM6K');</script>
+<!-- End Google Tag Manager --> 
+ 
+
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 640px;
+      margin: 40px auto;
+      padding: 0 16px;
+      line-height: 1.6;
+      color: #222;
+    }
+
+    #button1, #demo-button {
+      background: #C11C84;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8GGVM6K"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <main>
+    <h1>Google Tag Manager Test Page</h1>
+    <p>
+      A sandbox page for practicing web analytics implementation:
+      Google Tag Manager, GA4 tagging and custom event tracking.
+    </p>
+
+    <h2>What is tracked here</h2>
+    <ul>
+      <li>Page views (GA4 Google Tag, trigger: All Pages)</li>
+      <li>Clicks on the button below (GA4 Event: <code>cta_click</code>)</li>
+    </ul>
+
+    <button id="button1" type="button">Get started</button>
+    <button id="demo-button" type="button">Request demo</button>
+
+    <p>
+      Part of my
+      <a href="https://github.com/juliakwit/marketing-analytics-portfolio" target="_blank">marketing analytics portfolio</a>
+      &middot;
+      <a href="https://www.linkedin.com/in/julia-kwit-5983073b6/" target="_blank">LinkedIn</a>
+    </p>
+  </main>
+    <script>
+    document.getElementById('demo-button').addEventListener('click', function () {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'demo_request',
+        plan: 'premium',
+        button_location: 'homepage'
+      });
+    });
+  </script>
+</body>
+
+</html>
